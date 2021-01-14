@@ -360,7 +360,7 @@ input[type='number']::-webkit-outer-spin-button {
 .middle-title {
 	padding-top: 85px;
 	padding-bottom: 98px;
-	background-position: 100% 0;
+	background-position: 100% -142px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -455,8 +455,8 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .coach-block__inner:nth-of-type(even) {
-	color: red;
 	direction: rtl;
+	margin-top: 40px;
 }
 
 .coach-block__title {
@@ -1168,6 +1168,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .middle-title {
 	padding-bottom: 64px;
+	background-position: 100% 0;
 }
 
 .middle-title__text {
