@@ -1,3 +1,7 @@
+{% set item = data['items']['merchant-effectivecommunication9keys']['products'][0] %}
+{% set ticket1 = data['items']['merchant-effectivecommunication9keys']['ticket1'] %}
+{% set ticket2 = data['items']['merchant-effectivecommunication9keys']['ticket2'] %}
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -299,13 +303,9 @@
 		</div>
 
 		<!-- GOODS BLOCK ! IMPORTANT-->
-		<input type="hidden" name="item_number" id="tiktok-instagram_ticket" class="items_quantity" value=1 min=1
-			disabled data-price="2400" data-old_price="2400"
-			data-name="Академия &quot;Запусти свой ТикТок + Инстаграм&quot; «Стандарт»" data-image="">
-
-		<input type="hidden" name="item_number" id="tiktok-instagram_ticket2" class="items_quantity2" value=1 min=1
-			disabled data-price="6600" data-old_price="6600"
-			data-name="Академия &quot;Запусти свой ТикТок + Инстаграм&quot; «Премиум»" data-image="">
+		<input type="hidden" name="item_number" id="{{item['code']}}" class="items_quantity" value=1 min=1 disabled
+			data-price="{{item['price']}}" data-old_price="{{item['old_price']}}" data-name="{{item['name']}}"
+			data-image="{{item['image']}}">
 		<!-- GOODS BLOCK ! IMPORTANT-->
 
 		<!-- POLICY BLOCK -->
